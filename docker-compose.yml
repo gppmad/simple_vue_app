@@ -6,7 +6,7 @@ services:
     container_name: simple_vue_app
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./docker/dev/Dockerfile
     volumes:
       - '.:/app'
       - '/app/node_modules'

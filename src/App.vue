@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App 2"/>
+    <SandBoxMoc/>
+    <SandBoxServer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
+import SandBoxMoc from './components/SandBoxMoc'
+import SandBoxServer from './components/SandBoxServer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SandBoxMoc,
+    SandBoxServer
   }
 }
 </script>
