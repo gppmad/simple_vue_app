@@ -1,0 +1,3 @@
+[submodule "simple_flask_app"]
+	path = simple_flask_app
+	url = https://github.com/MadKerberos/simple_flask_app
