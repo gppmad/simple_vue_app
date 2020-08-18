@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  #vue.js frontend
+  client:
+    container_name: simple_vue_app
+    build:
+      context: .
+      dockerfile: ./docker/dev/Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '8080:8080'
+    #env_file:
+    #  - ./env/dev/.env
+  
+  #flask backend included in this project as git sudmodule
+  server:
+    build:
+      context: ./simple_flask_app
+      dockerfile: ./docker/dev/Dockerfile
+    volumes:
+      - ./simple_flask_app:/app
+    ports:
+      - 5000:5000

@@ -5,21 +5,21 @@
 </template>
 
 <script>
-//import axios from 'axios';
+import axios from 'axios';
 
 //import msg_json from "../../moc/message_api.json"
 
 export default {
   data () {
     return {
-      retrivied_from_server: "retrivied from Server"
+      retrivied_from_server: "no data"
     }
   },
-  // mounted () {
-  //   axios
-  //     .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-  //     .then(response => (this.retrivied_from_server = response))
-  // }
+  mounted () {
+    axios
+      .get('/api')
+      .then(response => (this.retrivied_from_server = response.data))
+  }
 }
 </script>
 
