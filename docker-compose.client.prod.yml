@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+  client:
+    container_name: simple_vue_app_client_prod
+    build:
+      context: .
+      dockerfile: ./docker/prod/Dockerfile
+    volumes:
+      - '/app/node_modules'
+    ports:
+      - '8080:8080'
+

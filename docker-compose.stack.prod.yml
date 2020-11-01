@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  client:
+    #image: "simple_app_client_prod:0.0.1"
+    image: "giuseppemaddiona/simple_app_client:0.0.1"
+    ports:
+      - 8080:8080
+      
+  server:
+    #image: "simple_app_server_prod:0.0.1"
+    image: "giuseppemaddiona/simple_app_server:0.0.1"
+    ports:
+      - 5000:5000
+

@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   client:
-    container_name: simple_vue_app
+    container_name: simple_vue_app_client_dev
     build:
       context: .
       dockerfile: ./docker/dev/Dockerfile

@@ -19,7 +19,8 @@ module.exports = {
             target: "http://server:5000",
             timeout: 6000,
             secure: false,
-            changeOrigin: true
+            changeOrigin: true,
+            disableHostCheck: true
           }
         }
     }
