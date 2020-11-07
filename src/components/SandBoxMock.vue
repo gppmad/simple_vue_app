@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import msg_json from "../../moc/message_api.json"
+import msg_json from "../../mock/message_api.json"
 
 export default {
   data () {
