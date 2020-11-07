@@ -1,20 +1,20 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <SandBoxMoc/>
+    <SandBoxMock/>
     <SandBoxServer/>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import SandBoxMoc from './components/SandBoxMoc'
+import SandBoxMock from './components/SandBoxMock'
 import SandBoxServer from './components/SandBoxServer'
 
 export default {
   name: 'App',
   components: {
-    SandBoxMoc,
+    SandBoxMock,
     SandBoxServer
   }
 }
